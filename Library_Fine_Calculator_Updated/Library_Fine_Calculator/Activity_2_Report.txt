@@ -1,0 +1,48 @@
+ACTIVITY 2: REAL-TIME PROBLEM SOLVING THROUGH USER-DEFINED PYTHON PACKAGE DEVELOPMENT
+
+Project Title: Library Fine Calculator
+
+1. Problem Statement
+Libraries need to calculate fines when books are returned after their due dates. Manual calculation can lead to mistakes. This project calculates due dates, overdue days, fines and payment summaries.
+
+2. Objectives
+- Create a user-defined Python package.
+- Develop reusable functions in a separate module.
+- Calculate due dates and overdue days.
+- Calculate fines and membership discounts.
+- Validate inputs and display a payment summary.
+
+3. Package Structure
+Library_Fine_Calculator/
+    library_pkg/
+        __init__.py
+        ActualTask.py
+    main.py
+    test_cases.py
+
+4. Functions Developed
+1. overdue_days(due_date, return_date): calculates overdue days.
+2. calculate_fine(days, fine_per_day=2): calculates the basic fine.
+3. payment_summary(book_title, days, fine_per_day=2, discount_percent=0): creates payment details.
+4. calculate_due_date(issue_date, loan_period=14): calculates the due date.
+5. calculate_discounted_fine(fine, discount_percent=0): applies a discount.
+6. get_return_status(days): returns the on-time or late status.
+
+5. Algorithm
+1. Start.
+2. Accept book title, issue date, loan period, return date and discount percentage.
+3. Calculate the due date.
+4. Calculate overdue days.
+5. Calculate the basic fine.
+6. Apply the discount, if any.
+7. Display payment summary and return status.
+8. Stop.
+
+6. Testing
+- Normal case: book returned three days late.
+- Boundary case: book returned on the due date.
+- Invalid date format.
+- Invalid discount greater than 100 percent.
+
+7. Conclusion
+The project demonstrates a user-defined Python package containing reusable functions for due-date calculation, overdue-day calculation, fine calculation, discounts and payment summaries.
